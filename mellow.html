@@ -1,0 +1,37 @@
+<head>
+  <title>#ThisRoom</title>
+</head>
+
+<body>
+  <div class="container">
+  {{> room}}
+  </div>
+</body>
+
+<template name="room">
+  <h1>#ThisRoom</h1>
+  <div class="chat-logs-container">
+  <table class="chat-logs table table-striped table-hover">
+    <tbody>
+      {{#each messages}}
+      	{{> message}}
+      {{/each}}
+    </tbody>
+  </table>
+  </div>
+  {{> input}}
+</template>
+
+<template name="message">
+	<tr><td class="name">{{name}}</td><td class="message">{{message}}</td></tr>
+</template>
+
+<template name="input">
+	<form id="message-form">
+		<input type="text" name="name" value="kparajul" />
+    <div class="input-append">
+    <input type="text" name="message" class="input-xxlarge"></textarea>
+		<input type="submit" class="btn" id='send' value="Send" />
+    </div>
+	</form>
+</template>
