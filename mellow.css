@@ -2,3 +2,5 @@
 	height: 300px;
 	overflow-y: scroll;
 }
+
+body { padding-bottom: 70px; }
