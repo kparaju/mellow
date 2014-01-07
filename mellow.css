@@ -1,6 +1,10 @@
 .chat-logs-container {
-	height: 300px;
-	overflow-y: scroll;
+  max-height: 400px;
+  overflow-y: scroll;
 }
 
-body { padding-bottom: 70px; }
+.message-wrap{
+  position: absolute;
+  bottom: 0px;
+}
+

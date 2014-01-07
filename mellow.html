@@ -19,13 +19,13 @@
     </tbody>
   </table>
   </div>
-  <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+  <div class="message-wrap">
     {{> input}}
-  </nav>
+  </div>
 </template>
 
 <template name="message">
-	<tr><td class="name">{{name}}</td><td class="message">{{message}}</td></tr>
+	<tr><td class="name">{{name}}</td><td class="message">{{{message}}}</td></tr>
 </template>
 
 <template name="input">
