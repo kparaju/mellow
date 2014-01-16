@@ -6,7 +6,7 @@ body, html , .container{
   max-height: 10%;
 }
 .chat-logs-container {
-  max-height: 80%;
+  height: 80%;
   overflow-y: scroll;
   border:1px solid #eee;
   border-radius: 2px;
